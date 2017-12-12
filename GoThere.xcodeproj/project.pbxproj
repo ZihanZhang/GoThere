@@ -10,6 +10,7 @@
 		8D6E92063C57CCEAB9242E73 /* libPods-GoThere.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9B80A2394B962928342555 /* libPods-GoThere.a */; };
 		EA08F47F1FE07303009B1236 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F47E1FE07303009B1236 /* LogInViewController.swift */; };
 		EA08F4811FE0779F009B1236 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F4801FE0779F009B1236 /* SignUpViewController.swift */; };
+		EA08F4831FE0991B009B1236 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F4821FE0991B009B1236 /* ExploreViewController.swift */; };
 		EA9EFAD71FDE1BD100CC9A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EFAD61FDE1BD100CC9A76 /* AppDelegate.swift */; };
 		EA9EFAD91FDE1BD100CC9A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EFAD81FDE1BD100CC9A76 /* ViewController.swift */; };
 		EA9EFADC1FDE1BD100CC9A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9EFADA1FDE1BD100CC9A76 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		E2599423A77EEF5897FC10DB /* Pods-GoThere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoThere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoThere/Pods-GoThere.debug.xcconfig"; sourceTree = "<group>"; };
 		EA08F47E1FE07303009B1236 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		EA08F4801FE0779F009B1236 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EA08F4821FE0991B009B1236 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		EA9EFAD31FDE1BD100CC9A76 /* GoThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9EFAD61FDE1BD100CC9A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA9EFAD81FDE1BD100CC9A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				EA9EFAD81FDE1BD100CC9A76 /* ViewController.swift */,
 				EA08F47E1FE07303009B1236 /* LogInViewController.swift */,
 				EA08F4801FE0779F009B1236 /* SignUpViewController.swift */,
+				EA08F4821FE0991B009B1236 /* ExploreViewController.swift */,
 				EA9EFADA1FDE1BD100CC9A76 /* Main.storyboard */,
 				EA9EFADD1FDE1BD100CC9A76 /* Assets.xcassets */,
 				EA9EFADF1FDE1BD100CC9A76 /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 			files = (
 				EA9EFAD91FDE1BD100CC9A76 /* ViewController.swift in Sources */,
 				EA9EFAD71FDE1BD100CC9A76 /* AppDelegate.swift in Sources */,
+				EA08F4831FE0991B009B1236 /* ExploreViewController.swift in Sources */,
 				EA08F4811FE0779F009B1236 /* SignUpViewController.swift in Sources */,
 				EA08F47F1FE07303009B1236 /* LogInViewController.swift in Sources */,
 			);

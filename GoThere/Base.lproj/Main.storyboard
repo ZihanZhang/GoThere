@@ -26,6 +26,21 @@
             </objects>
             <point key="canvasLocation" x="-1290" y="88"/>
         </scene>
+        <!--Explore View Controller-->
+        <scene sceneID="KOp-Nj-aTG">
+            <objects>
+                <viewController id="9RZ-v3-TPW" customClass="ExploreViewController" customModule="GoThere" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lFE-4N-qcN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kI5-f8-FsA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okF-hJ-FmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="-701"/>
+        </scene>
         <!--GoThere-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -62,6 +77,15 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="3pe-UV-SWa"/>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zc4-ch-xT9">
+                                <rect key="frame" x="317" y="96" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70387386658031081" green="0.70387386658031081" blue="0.70387386658031081" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Explore"/>
+                                <connections>
+                                    <segue destination="9RZ-v3-TPW" kind="show" id="7sD-hT-GEU"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vo1-fr-e7L">
                                 <rect key="frame" x="71" y="381" width="272" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,6 +102,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="GoThere" id="8mn-nX-1Xd"/>
                     <connections>
+                        <outlet property="Explore" destination="Zc4-ch-xT9" id="wrV-ZP-tZW"/>
                         <outlet property="Location" destination="Ytp-BZ-oPr" id="twF-Xq-IFt"/>
                         <outlet property="Submit" destination="Vo1-fr-e7L" id="vcQ-oM-Rdw"/>
                         <outlet property="toolBar" destination="FHE-70-EcF" id="mWF-DG-dc5"/>
@@ -85,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-434.39999999999998" y="87.706146926536732"/>
+            <point key="canvasLocation" x="-434.78260869565219" y="87.228260869565219"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="9ct-9J-vB4">

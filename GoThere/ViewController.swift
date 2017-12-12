@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Location: UITextField!
     @IBOutlet weak var Submit: UIButton!
     @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet weak var Explore: UIButton!
     var mapView:GMSMapView?
     
     var placesClient: GMSPlacesClient!
@@ -117,6 +118,7 @@ class ViewController: UIViewController {
 //            self.view.bringSubview(toFront: self.Location)
 //            self.view.bringSubview(toFront: self.Submit)
             self.view.bringSubview(toFront: self.toolBar)
+            self.view.addSubview(self.Explore)
         }
         
         
