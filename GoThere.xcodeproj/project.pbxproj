@@ -16,6 +16,11 @@
 		EA9EFADC1FDE1BD100CC9A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9EFADA1FDE1BD100CC9A76 /* Main.storyboard */; };
 		EA9EFADE1FDE1BD100CC9A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9EFADD1FDE1BD100CC9A76 /* Assets.xcassets */; };
 		EA9EFAE11FDE1BD100CC9A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9EFADF1FDE1BD100CC9A76 /* LaunchScreen.storyboard */; };
+		EACC26971FE125AB009CA793 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EACC26961FE125AB009CA793 /* images.jpeg */; };
+		EACC26991FE12707009CA793 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACC26981FE12707009CA793 /* Backend.swift */; };
+		EACC269D1FE12A53009CA793 /* harbor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EACC269A1FE12A53009CA793 /* harbor.jpeg */; };
+		EACC269E1FE12A53009CA793 /* charlesriver.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EACC269B1FE12A53009CA793 /* charlesriver.jpeg */; };
+		EACC269F1FE12A53009CA793 /* bostoncommon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EACC269C1FE12A53009CA793 /* bostoncommon.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		EA9EFADD1FDE1BD100CC9A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9EFAE01FDE1BD100CC9A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA9EFAE21FDE1BD100CC9A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EACC26961FE125AB009CA793 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		EACC26981FE12707009CA793 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
+		EACC269A1FE12A53009CA793 /* harbor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = harbor.jpeg; path = recommendations/harbor.jpeg; sourceTree = "<group>"; };
+		EACC269B1FE12A53009CA793 /* charlesriver.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = charlesriver.jpeg; path = recommendations/charlesriver.jpeg; sourceTree = "<group>"; };
+		EACC269C1FE12A53009CA793 /* bostoncommon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bostoncommon.jpeg; path = recommendations/bostoncommon.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +85,16 @@
 		EA9EFAD51FDE1BD100CC9A76 /* GoThere */ = {
 			isa = PBXGroup;
 			children = (
+				EACC269C1FE12A53009CA793 /* bostoncommon.jpeg */,
+				EACC269B1FE12A53009CA793 /* charlesriver.jpeg */,
+				EACC269A1FE12A53009CA793 /* harbor.jpeg */,
+				EACC26961FE125AB009CA793 /* images.jpeg */,
 				EA9EFAD61FDE1BD100CC9A76 /* AppDelegate.swift */,
 				EA9EFAD81FDE1BD100CC9A76 /* ViewController.swift */,
 				EA08F47E1FE07303009B1236 /* LogInViewController.swift */,
 				EA08F4801FE0779F009B1236 /* SignUpViewController.swift */,
 				EA08F4821FE0991B009B1236 /* ExploreViewController.swift */,
+				EACC26981FE12707009CA793 /* Backend.swift */,
 				EA9EFADA1FDE1BD100CC9A76 /* Main.storyboard */,
 				EA9EFADD1FDE1BD100CC9A76 /* Assets.xcassets */,
 				EA9EFADF1FDE1BD100CC9A76 /* LaunchScreen.storyboard */,
@@ -160,6 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9EFAE11FDE1BD100CC9A76 /* LaunchScreen.storyboard in Resources */,
+				EACC269F1FE12A53009CA793 /* bostoncommon.jpeg in Resources */,
+				EACC269E1FE12A53009CA793 /* charlesriver.jpeg in Resources */,
+				EACC26971FE125AB009CA793 /* images.jpeg in Resources */,
+				EACC269D1FE12A53009CA793 /* harbor.jpeg in Resources */,
 				EA9EFADE1FDE1BD100CC9A76 /* Assets.xcassets in Resources */,
 				EA9EFADC1FDE1BD100CC9A76 /* Main.storyboard in Resources */,
 			);
@@ -229,6 +248,7 @@
 			files = (
 				EA9EFAD91FDE1BD100CC9A76 /* ViewController.swift in Sources */,
 				EA9EFAD71FDE1BD100CC9A76 /* AppDelegate.swift in Sources */,
+				EACC26991FE12707009CA793 /* Backend.swift in Sources */,
 				EA08F4831FE0991B009B1236 /* ExploreViewController.swift in Sources */,
 				EA08F4811FE0779F009B1236 /* SignUpViewController.swift in Sources */,
 				EA08F47F1FE07303009B1236 /* LogInViewController.swift in Sources */,

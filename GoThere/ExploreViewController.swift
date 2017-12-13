@@ -8,11 +8,25 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController {
-
+class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate  {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return recommendations.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "recommendationcell")
+        
+        cell.textLabel?.text = recommendations[indexPath.row].discription
+        cell.imageView?.image = recommendations[indexPath.row].picture
+        
+        return cell
+    }
+    
+    @IBOutlet weak var Advertise: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Advertise.image = #imageLiteral(resourceName: "images.jpeg")
         // Do any additional setup after loading the view.
     }
 
