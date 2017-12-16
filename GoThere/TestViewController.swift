@@ -28,6 +28,10 @@ class TestViewController: UIViewController {
             fatalError("Check storyboard for missing LocationTableViewController")
         }
         
+        guard let listController = childViewControllers.last as? ListViewController else {
+            fatalError("Check storyboard for missing LocationTableViewController")
+        }
+        
         geoCoder.geocodeAddressString(Location!) { (placemarks, error) in
             guard
                 let placemarks = placemarks,
@@ -45,6 +49,9 @@ class TestViewController: UIViewController {
             mapController.Category = self.Category!
             
             mapController.updataMap()
+            
+            listController.Category = self.Category!
+            listController.updataList()
             
         }
         self.view.bringSubview(toFront: CommentButton)

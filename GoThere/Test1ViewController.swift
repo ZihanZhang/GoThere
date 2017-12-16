@@ -151,9 +151,9 @@ class Test1ViewController: UIViewController, GMSMapViewDelegate {
                             let marker = GMSMarker()
                             marker.position = CLLocationCoordinate2D(latitude: lat!, longitude: longt!)
                             marker.title = result.attributedPrimaryText.string
-                            print(result.attributedPrimaryText.string)
+//                            print(result.attributedPrimaryText.string)
                             marker.snippet = result.placeID
-                            print(result.placeID)
+//                            print(result.placeID)
                             marker.map = self.mapView
                         }
                         )

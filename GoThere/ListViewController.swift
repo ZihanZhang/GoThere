@@ -11,7 +11,7 @@ import Firebase
 import FirebaseDatabase
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    var curLib: [String] = []
     var curList: [String] = []
     var Category: String?
     
@@ -28,26 +28,59 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        let ref = Database.database().reference()
         
-        handle = ref.child("comments").observe(.childAdded, with: {(snapshot) in
-            if let item = snapshot.key as? String {
-                self.curList.append(item)
-                self.myTableView.reloadData()
-            }
-        })
+        updataList()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updataList() {
+        if Category == "FoodSegue" {
+            curLib = foodLib
+        }
+        if Category == "OutdoorSegue" {
+            curLib = outdoorLib
+        }
+        if Category == "HistorySegue" {
+            curLib = historyLib
+        }
+        if Category == "SouvenirSegue" {
+            curLib = souvenirLib
+        }
+        if Category == "EntertainmentSegue" {
+            curLib = entertainmentLib
+        }
+        if Category == "ShoppingSegue" {
+            curLib = shoppingLib
+        }
+        if Category == "SportSegue" {
+            curLib = sportLib
+        }
+        if Category == "NatureSegue" {
+            curLib = natureLib
+        }
+        
+        // Do any additional setup after loading the view.
+        let ref = Database.database().reference()
+        
+        handle = ref.child("comments").observe(.childAdded, with: {(snapshot) in
+            if let item = snapshot.key as? String {
+                for i in self.curLib {
+                    print(i)
+                    if (snapshot.key.range(of: i) != nil) {
+                        self.curList.append(item)
+                        break
+                    }
+                }
+                self.myTableView.reloadData()
+            }
+        })
     }
     
 
