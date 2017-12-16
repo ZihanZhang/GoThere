@@ -155,6 +155,7 @@ class Test1ViewController: UIViewController, GMSMapViewDelegate {
                             marker.snippet = result.placeID
 //                            print(result.placeID)
                             marker.map = self.mapView
+                            
                         }
                         )
                         
@@ -166,6 +167,7 @@ class Test1ViewController: UIViewController, GMSMapViewDelegate {
     
     func mapView(_ mapView:GMSMapView, willMove gesture:Bool) {
         mapView.clear()
+//        inViewList.removeAll()
     }
     
     func mapView(_ mapView:GMSMapView, idleAt cameraPosition:GMSCameraPosition) {
@@ -191,6 +193,7 @@ class Test1ViewController: UIViewController, GMSMapViewDelegate {
         self.longt = longt
         
         placeAutocomplete(lib: curLib!)
+        
     }
     
 

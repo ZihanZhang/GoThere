@@ -28,6 +28,20 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "DetailSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailSegue" {
+            if let toViewController = segue.destination as? DetailsViewController {
+                toViewController.curItem = curList[(myTableView.indexPathForSelectedRow?.row)!]
+            }
+        }
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +86,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         handle = ref.child("comments").observe(.childAdded, with: {(snapshot) in
             if let item = snapshot.key as? String {
                 for i in self.curLib {
-                    print(i)
+//                    print(i)
                     if (snapshot.key.range(of: i) != nil) {
                         self.curList.append(item)
                         break
@@ -82,6 +96,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         })
     }
+
     
 
     /*

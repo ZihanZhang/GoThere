@@ -10,6 +10,7 @@
 		8D6E92063C57CCEAB9242E73 /* libPods-GoThere.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9B80A2394B962928342555 /* libPods-GoThere.a */; };
 		EA08F47F1FE07303009B1236 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F47E1FE07303009B1236 /* LogInViewController.swift */; };
 		EA08F4831FE0991B009B1236 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F4821FE0991B009B1236 /* ExploreViewController.swift */; };
+		EA4008791FE54A1200DAF24C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4008781FE54A1200DAF24C /* DetailsViewController.swift */; };
 		EA6E8A0B1FE3A90E008C3A74 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E8A0A1FE3A90E008C3A74 /* DetailViewController.swift */; };
 		EA6E8A0D1FE3B541008C3A74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6E8A0C1FE3B541008C3A74 /* GoogleService-Info.plist */; };
 		EA6E8A0F1FE4D09D008C3A74 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E8A0E1FE4D09D008C3A74 /* TestViewController.swift */; };
@@ -35,6 +36,7 @@
 		E2599423A77EEF5897FC10DB /* Pods-GoThere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoThere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoThere/Pods-GoThere.debug.xcconfig"; sourceTree = "<group>"; };
 		EA08F47E1FE07303009B1236 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		EA08F4821FE0991B009B1236 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		EA4008781FE54A1200DAF24C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EA6E8A0A1FE3A90E008C3A74 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EA6E8A0C1FE3B541008C3A74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA6E8A0E1FE4D09D008C3A74 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				EA08F4821FE0991B009B1236 /* ExploreViewController.swift */,
 				EACC26981FE12707009CA793 /* Backend.swift */,
 				EA9EFADA1FDE1BD100CC9A76 /* Main.storyboard */,
+				EA4008781FE54A1200DAF24C /* DetailsViewController.swift */,
 				EA6E8A141FE50A7A008C3A74 /* CommentViewController.swift */,
 				EA6E8A121FE504CC008C3A74 /* ListViewController.swift */,
 				EA6E8A101FE4DE0C008C3A74 /* Test1ViewController.swift */,
@@ -270,6 +273,7 @@
 				EA6E8A151FE50A7A008C3A74 /* CommentViewController.swift in Sources */,
 				EA6E8A0F1FE4D09D008C3A74 /* TestViewController.swift in Sources */,
 				EA9EFAD91FDE1BD100CC9A76 /* ViewController.swift in Sources */,
+				EA4008791FE54A1200DAF24C /* DetailsViewController.swift in Sources */,
 				EA9EFAD71FDE1BD100CC9A76 /* AppDelegate.swift in Sources */,
 				EACC26991FE12707009CA793 /* Backend.swift in Sources */,
 				EA6E8A111FE4DE0C008C3A74 /* Test1ViewController.swift in Sources */,

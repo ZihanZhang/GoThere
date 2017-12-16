@@ -40,6 +40,7 @@ class LogInViewController: UIViewController {
                     alert.addButton(withTitle: "Let's Explore")
                     alert.show()
                     self.performSegue(withIdentifier: "LoginSegue", sender: self)
+                    SignedIn = true
                 }
                 else {
                     let alert = UIAlertView()

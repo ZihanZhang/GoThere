@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import FirebaseAuth
 
 class TestViewController: UIViewController {
     @IBOutlet weak var CommentButton: UIButton!
@@ -53,8 +54,17 @@ class TestViewController: UIViewController {
             listController.Category = self.Category!
             listController.updataList()
             
+            
         }
-        self.view.bringSubview(toFront: CommentButton)
+        
+        CommentButton.isHidden = true
+        
+        let handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            if SignedIn {
+                self.CommentButton.isHidden = false
+                self.view.bringSubview(toFront: self.CommentButton)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

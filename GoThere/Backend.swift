@@ -23,6 +23,8 @@ class recommendation {
 
 var recommendations: [recommendation] = []
 
+var SignedIn = false
+
 var sportLib: [String] = ["Ball"]
 var shoppingLib: [String] = ["Mall"]
 var historyLib: [String] = ["History"]
