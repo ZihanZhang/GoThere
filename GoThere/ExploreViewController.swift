@@ -45,44 +45,44 @@ class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
         }
         if segue.identifier == "OutdoorSegue" {
-            if let toViewController = segue.destination as? DetailViewController {
+            if let toViewController = segue.destination as? TestViewController {
                 toViewController.Category = "OutdoorSegue"
                 toViewController.Location = self.location
 
             }
         }
         if segue.identifier == "HistorySegue" {
-            if let toViewController = segue.destination as? DetailViewController {
+            if let toViewController = segue.destination as? TestViewController {
                 toViewController.Category = "HistorySegue"
                 toViewController.Location = self.location
             }
         }
         if segue.identifier == "SouvenirSegue" {
-            if let toViewController = segue.destination as? DetailViewController {
+            if let toViewController = segue.destination as? TestViewController {
                 toViewController.Category = "SouvenirSegue"
                 toViewController.Location = self.location
             }
         }
         if segue.identifier == "EntertainmentSegue" {
-            if let toViewController = segue.destination as? DetailViewController {
+            if let toViewController = segue.destination as? TestViewController {
                 toViewController.Category = "EntertainmentSegue"
                 toViewController.Location = self.location
             }
         }
         if segue.identifier == "ShoppingSegue" {
-            if let toViewController = segue.destination as? DetailViewController {
+            if let toViewController = segue.destination as? TestViewController {
                 toViewController.Category = "ShoppingSegue"
                 toViewController.Location = self.location
             }
         }
         if segue.identifier == "SportSegue" {
-            if let toViewController = segue.destination as? DetailViewController {
+            if let toViewController = segue.destination as? TestViewController {
                 toViewController.Category = "SportSegue"
                 toViewController.Location = self.location
             }
         }
         if segue.identifier == "NatureSegue" {
-            if let toViewController = segue.destination as? DetailViewController {
+            if let toViewController = segue.destination as? TestViewController {
                 toViewController.Category = "NatureSegue"
                 toViewController.Location = self.location
             }
