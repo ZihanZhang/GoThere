@@ -23,6 +23,15 @@ class recommendation {
 
 var recommendations: [recommendation] = []
 
+var sportLib: [String] = ["Ball"]
+var shoppingLib: [String] = ["Mall"]
+var historyLib: [String] = ["History"]
+var natureLib: [String] = ["Nature"]
+var souvenirLib: [String] = ["Souvenir"]
+var outdoorLib: [String] = ["Outdoor"]
+var entertainmentLib: [String] = ["Entertainment"]
+var foodLib: [String] = ["Food"]
+
 func start() {
     let bostoncommon: recommendation = recommendation(picture: #imageLiteral(resourceName: "bostoncommon.jpeg"), discription: "bostoncommon", details:[])
     let charlesriver: recommendation = recommendation(picture: #imageLiteral(resourceName: "charlesriver.jpeg"), discription: "charlesriver", details: [])

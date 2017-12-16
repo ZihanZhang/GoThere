@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Submit: UIButton!
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var Explore: UIButton!
+    @IBOutlet weak var TestButton: UIButton!
     var mapView:GMSMapView?
     
     var placesClient: GMSPlacesClient!
@@ -134,6 +135,14 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LocationSegue" {
+            if let toViewController = segue.destination as? ExploreViewController {
+                toViewController.location = Location.text
+            }
+        }
     }
 
 

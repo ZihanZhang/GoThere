@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
-
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var SignInOrUp: UISegmentedControl!
+    @IBOutlet weak var Comfirm: UIBarButtonItem!
+    var isSignIn = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,9 +28,62 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func LogIn(_ sender: UIBarButtonItem) {
+        let emailtext = email.text
+        let passwordtext = password.text
         
+        if isSignIn == true {
+            Auth.auth().signIn(withEmail: emailtext!, password: passwordtext!) { (user, error) in
+                if let u = user {
+                    let alert = UIAlertView()
+                    alert.title = "Welcome Back!"
+                    alert.message = "Sign In Succeed"
+                    alert.addButton(withTitle: "Let's Explore")
+                    alert.show()
+                    self.performSegue(withIdentifier: "LoginSegue", sender: self)
+                }
+                else {
+                    let alert = UIAlertView()
+                    alert.title = "Sorry"
+                    alert.message = "Sign In Failed"
+                    alert.addButton(withTitle: "Retry")
+                    alert.show()
+                }
+            }
+        }
+        else {
+            Auth.auth().createUser(withEmail: emailtext!, password: passwordtext!, completion: { (user, error) in
+                if let u = user {
+                    let alert = UIAlertView()
+                    alert.title = "Welcome!"
+                    alert.message = "Sign Up Succeed"
+                    alert.addButton(withTitle: "Sign In")
+                    alert.show()
+                    
+                    self.SignInOrUp.selectedSegmentIndex = 0
+                    self.isSignIn = true
+                    self.Comfirm.title = "Sign In"
+                }
+                else {
+                    let alert = UIAlertView()
+                    alert.title = "Sorry!"
+                    alert.message = "Sign Up Failed"
+                    alert.addButton(withTitle: "Retry")
+                    alert.show()
+                }
+            })
+        }
     }
     
+    @IBAction func ValueChanged(_ sender: Any) {
+        if isSignIn == true {
+            isSignIn = false
+            Comfirm.title = "Sign Up"
+        }
+        else {
+            isSignIn = true
+            Comfirm.title = "Sign In"
+        }
+    }
     /*
     // MARK: - Navigation
 
