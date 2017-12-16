@@ -15,6 +15,8 @@
 		EA6E8A0F1FE4D09D008C3A74 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E8A0E1FE4D09D008C3A74 /* TestViewController.swift */; };
 		EA6E8A111FE4DE0C008C3A74 /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E8A101FE4DE0C008C3A74 /* Test1ViewController.swift */; };
 		EA6E8A131FE504CC008C3A74 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E8A121FE504CC008C3A74 /* ListViewController.swift */; };
+		EA6E8A151FE50A7A008C3A74 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E8A141FE50A7A008C3A74 /* CommentViewController.swift */; };
+		EA6E8A171FE50D5A008C3A74 /* background.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EA6E8A161FE50D5A008C3A74 /* background.JPG */; };
 		EA9EFAD71FDE1BD100CC9A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EFAD61FDE1BD100CC9A76 /* AppDelegate.swift */; };
 		EA9EFAD91FDE1BD100CC9A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EFAD81FDE1BD100CC9A76 /* ViewController.swift */; };
 		EA9EFADC1FDE1BD100CC9A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9EFADA1FDE1BD100CC9A76 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		EA6E8A0E1FE4D09D008C3A74 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		EA6E8A101FE4DE0C008C3A74 /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
 		EA6E8A121FE504CC008C3A74 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		EA6E8A141FE50A7A008C3A74 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		EA6E8A161FE50D5A008C3A74 /* background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.JPG; path = "Icon and Background Picture/background.JPG"; sourceTree = "<group>"; };
 		EA9EFAD31FDE1BD100CC9A76 /* GoThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9EFAD61FDE1BD100CC9A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA9EFAD81FDE1BD100CC9A76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				EACC269B1FE12A53009CA793 /* charlesriver.jpeg */,
 				EACC269A1FE12A53009CA793 /* harbor.jpeg */,
 				EACC26961FE125AB009CA793 /* images.jpeg */,
+				EA6E8A161FE50D5A008C3A74 /* background.JPG */,
 				EA9EFAD61FDE1BD100CC9A76 /* AppDelegate.swift */,
 				EA6E8A0A1FE3A90E008C3A74 /* DetailViewController.swift */,
 				EA9EFAD81FDE1BD100CC9A76 /* ViewController.swift */,
@@ -104,6 +109,7 @@
 				EA08F4821FE0991B009B1236 /* ExploreViewController.swift */,
 				EACC26981FE12707009CA793 /* Backend.swift */,
 				EA9EFADA1FDE1BD100CC9A76 /* Main.storyboard */,
+				EA6E8A141FE50A7A008C3A74 /* CommentViewController.swift */,
 				EA6E8A121FE504CC008C3A74 /* ListViewController.swift */,
 				EA6E8A101FE4DE0C008C3A74 /* Test1ViewController.swift */,
 				EA6E8A0E1FE4D09D008C3A74 /* TestViewController.swift */,
@@ -194,6 +200,7 @@
 				EACC269D1FE12A53009CA793 /* harbor.jpeg in Resources */,
 				EA9EFADE1FDE1BD100CC9A76 /* Assets.xcassets in Resources */,
 				EA9EFADC1FDE1BD100CC9A76 /* Main.storyboard in Resources */,
+				EA6E8A171FE50D5A008C3A74 /* background.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6E8A151FE50A7A008C3A74 /* CommentViewController.swift in Sources */,
 				EA6E8A0F1FE4D09D008C3A74 /* TestViewController.swift in Sources */,
 				EA9EFAD91FDE1BD100CC9A76 /* ViewController.swift in Sources */,
 				EA9EFAD71FDE1BD100CC9A76 /* AppDelegate.swift in Sources */,

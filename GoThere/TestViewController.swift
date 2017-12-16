@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 
 class TestViewController: UIViewController {
+    @IBOutlet weak var CommentButton: UIButton!
     
     var Location: String?
     var Category: String?
@@ -46,6 +47,7 @@ class TestViewController: UIViewController {
             mapController.updataMap()
             
         }
+        self.view.bringSubview(toFront: CommentButton)
     }
 
     override func didReceiveMemoryWarning() {

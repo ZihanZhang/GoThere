@@ -5,4 +5,5 @@ target 'GoThere' do
   pod 'GooglePlacePicker'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 end

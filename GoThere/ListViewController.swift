@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var curList: [String] = []
+    var Category: String?
+    
+    @IBOutlet weak var myTableView: UITableView!
+    var handle: DatabaseHandle?
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        return curList.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "listcell")
+        cell.textLabel?.text = curList[indexPath.row]
+        return cell
     }
     
     
@@ -25,6 +35,14 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let ref = Database.database().reference()
+        
+        handle = ref.child("comments").observe(.childAdded, with: {(snapshot) in
+            if let item = snapshot.key as? String {
+                self.curList.append(item)
+                self.myTableView.reloadData()
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
